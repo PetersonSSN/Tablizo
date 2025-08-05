@@ -19,6 +19,7 @@
       </header>
       <section id="menu">
         <h2>Menú del Día</h2>
+        <div id="fecha-dia" class="fecha-dia"></div>
         <ul>
           <li>Plato 1 - Descripción breve</li>
           <li>Plato 2 - Descripción breve</li>
@@ -69,5 +70,10 @@
     <footer>
       <p>&copy; 2025 Tablizo Bar Restaurante</p>
     </footer>
+    <script>
+      const fecha = new Date();
+      const opciones = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+      document.getElementById('fecha-dia').textContent = fecha.toLocaleDateString('es-ES', opciones);
+    </script>
   </body>
 </html>
