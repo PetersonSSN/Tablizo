@@ -317,3 +317,29 @@ footer {
   margin: 0 auto 0.5rem auto;
   filter: drop-shadow(0 4px 16px rgba(0, 0, 0, 0.4));
 }
+
+@media (max-width: 800px) {
+
+  .main-bg,
+  .info-row {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    max-width: 100vw;
+  }
+
+  .info-row {
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: stretch;
+  }
+
+  #reservacion,
+  #contacto {
+    min-width: 0;
+    max-width: 100%;
+    width: 100%;
+    padding: 1.2rem 1.2rem 1.2rem 1.2rem;
+    min-height: 240px;
+    box-sizing: border-box;
+  }
+}
