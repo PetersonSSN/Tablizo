@@ -339,7 +339,26 @@ footer {
     max-width: 100%;
     width: 100%;
     padding: 1.2rem 1.2rem 1.2rem 1.2rem;
-    min-height: 240px;
+    min-height: unset;
+    /* Permite que crezca según el contenido */
+    box-sizing: border-box;
+    position: static;
+    /* Evita problemas de posicionamiento */
+    overflow: visible;
+    /* Permite mostrar todo el contenido */
+  }
+
+  #reservacion form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  #reservacion label,
+  #reservacion input,
+  #reservacion button {
+    font-size: 1rem;
+    width: 100%;
     box-sizing: border-box;
   }
 }
