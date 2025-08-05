@@ -362,3 +362,21 @@ footer {
     box-sizing: border-box;
   }
 }
+
+#reservacion input,
+#reservacion select,
+#reservacion textarea {
+  color: #2c1a13;
+  /* Letras negras por defecto */
+  transition: color 0.2s, background 0.2s, border 0.2s;
+}
+
+#reservacion input:focus,
+#reservacion select:focus,
+#reservacion textarea:focus {
+  background: rgba(255, 215, 0, 0.18);
+  color: #fff;
+  /* Letras blancas al editar */
+  border: 2px solid #ffd700;
+  outline: none;
+}
